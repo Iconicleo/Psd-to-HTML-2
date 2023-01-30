@@ -343,7 +343,7 @@ a{text-decoration: none;}
   padding-top: 45px;
   padding-bottom:45px ; 
   text-align: center;
-  background-image:  url(../img/hire1.jpg);  
+  background:  url(../img/hire1.jpg);  
   background-size: 100% 100%;
   background-attachment: fixed;
 }
