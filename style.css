@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Baloo Bhai 2", cursive;
+  box-sizing: border-box;
+}
+a{text-decoration: none;}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.nav_style {
+  background: #fff;
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+
+.navbar-brand img {
+  width: 90px;
+  height: 90px;
+}
+
+
+.navbar-nav li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /* color: #ca4203; */
+  color: #333;
+  position: relative;
+}
+
+.navbar-nav li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 50%;
+  width: 0%;
+  height: 3%;
+  background: #ca4203;
+  transition: all 0.3s linear;
+}
+
+.navbar-nav li a:hover:before {
+  width: 80%;
+}
+
+.navbar-nav li a:hover {
+  color: #ca4203 !important;
+}
+
+.navbar-nav li .active {
+  color: #ca4203 !important;
+}
+
+@media (max-width: 998px) {
+  .navbar-nav {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .navbar-nav li a:hover:before {
+    width: 0%;
+  }
+}
+
+.img-fluid1 {
+  width: 70%;
+  float: right;
+  height: 70%;
+}
+
+/* header style css */
+
+.header_text {
+  font-size: 26px;
+  color: #8c8c8c;
+  margin-top: 80px;
+}
+
+.header_text2 {
+  font-size: 26px;
+  color: #2d3436;
+  margin-bottom: 70px;
+}
+
+.span_header_text {
+  color: #ca4203;
+}
+
+.hire_me {
+  width: 160px;
+  height: 40px;
+  background: #ca4203;
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.about_me {
+  width: 160px;
+  height: 40px;
+  color: #ca4203;
+  font-size: 20px;
+  background: #fff;
+  text-transform: capitalize;
+  outline: none;
+  border: 1px solid #ca4203;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.hire_me:hover {
+  background: #fff;
+  color: #ca4203;
+  border: 1px solid #ca4203;
+}
+
+.about_me:hover {
+  background: #ca4203;
+  color: #fff;
+  border: none;
+}
+
+.header_mail p{
+  margin-top: 40px;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+
+.header_mail p:nth-child(2){
+  margin-top: -20px;
+}
+
+/* about section css */
+.about_sec{
+  padding-top: 50px ;
+}
+
+.img-fluid2{
+  width: 70%;
+  
+  height: auto;
+}
+
+.main_title h1{
+  font-weight: 500;
+  font-size: 80px;
+  color: #000;  
+  text-align: center;
+}
+
+.about_text{
+  margin-top: 30px;
+}
+
+.about_text h1{
+  font-size: 33px;
+  color: #000;
+  margin-top: -20px;
+  margin-bottom:25px ;
+}
+
+.about_text h2{
+  font-size: 24px;
+}
+
+.about_text p{
+  color: #000 ;
+  font-size: 24px;
+}
+
+/* expert section starts */
+.expert_sec{
+  padding-top: 50px;
+  
+
+}
+
+.main_title p{
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+}
+
+.row .common_div{
+  margin-top: 80px;
+}
+
+.expert_sec .progress{
+  width: 90%;
+  height: 14px;
+  border-radius: 7px ;
+}
+
+.expert_sec .progress-bar-1{
+  width: 93%;
+  border-radius: 7px;
+  background-color: #ea2148;
+}
+.expert_sec .progress-bar-2{
+  width: 93%;
+  border-radius: 7px;
+  background-color: #ca4203;
+}
+.expert_sec .progress-bar-3{
+  width: 93%;
+  border-radius: 7px;
+  background-color: #1c9588;
+}
+
+.expert_sec h2{
+  position: relative;
+}
+
+.expert_h1::after{
+  content: '93%';
+  position: absolute;
+  top: 10px;
+  right: 13%;
+  font-size: 16px;
+  color: #000;
+  font-size: 500;
+   
+}
+.expert_h2::after{
+  content: '83%';
+  position: absolute;
+  top: 10px;
+  right: 13%;
+  font-size: 16px;
+  color: #000;
+  font-size: 500;
+   
+}
+.expert_h3::after{
+  content: '88%';
+  position: absolute;
+  top: 10px;
+  right: 13%;
+  font-size: 16px;
+  color: #000;
+  font-size: 500;
+   
+}
+.expert_sec .row{
+  display: flex;
+}
+.img-fluid3{
+
+    /* position: relative; */
+    width: 55%;
+    height: auto;
+    /* left: 112.5%;  */
+     /* bottom: 361px; */
+     float: right;
+}
+
+
+/* Our Services Start */
+.container-fluid .ourservices{
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.services_div{
+  border-radius: #f6f6f6;
+  padding: 20px 10px 70px 10px;
+  margin-top: 50px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  position: relative;
+  box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+
+.services_div:hover{
+  background: #fff;
+  box-shadow: 0 0 4px 1px grey;
+}
+.services_div h1{
+  text-align: center;
+  font-size: 52px;
+  color: #ca4203;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: auto;
+  background: #ffeee6 ;
+}
+.services_div h1:hover{
+  background-color: #fff;
+  border: 1px solid #ca4203;
+}
+
+.services_div .services_list_icon{
+  width: 14px;
+  height: 14px;
+  margin-right:5px ;
+}
+.fa-circle-dot{
+  color: #ca4203;
+}
+.fa-heart{
+  
+  color: #fff;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  
+}
+
+.services_div:hover .fa-heart{
+  color: #ffeee6;
+}
+
+.services_div .col-lg-3 .col-md-4 .col-10{
+  padding-right: 0px !important ;
+  padding-bottom: 0px !important;
+} 
+.services_div li{
+  list-style: none;
+  font-size: 23px;
+  color: #000000;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+
+.services_div li:first-child{
+  padding-top: 20px;
+}
+
+/* hire me section */
+.hireme_sec{
+  padding-top: 45px;
+  padding-bottom:45px ; 
+  text-align: center;
+  background-image:  url('/img/hire1.jpg');  
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+ .hireme_sec h1{
+  font-size: 40px;
+  color: #ca4203;
+ }
+
+ .hireme_sec p{
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 3px;
+ }
+ .hireme_sec h3{
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: -10px;
+  padding-bottom: 30px;
+ }
+
+ /* contact us css */
+
+ .contactme_sec{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+ } 
+
+ .contact_img img{
+  position: absolute;
+  bottom: 100px;
+  left: 93px;
+  width: 15%;
+}
+
+/* //////////contact_share_div */
+.contact_share_div{
+  width: 25%;
+  height: 150px;
+  
+  align-content:center ;
+  border-radius: 30px;
+  background: #f6f6f6;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+}
+
+.contact_share_div:hover{
+  
+  background-color: #ffffff;
+  border: 1px solid #ff874f;
+  filter: drop-shadow(2px 0px 8px rgba(0, 0, 0, 0.18));
+}
+
+.contact_share_div:hover .fa-envelope,.fa-whatsapp,.fa-location-dot{
+  color: #ca4203;
+}
+
+.contact_share_div p{
+  margin: 0;
+}
+
+/* @media (max-width:760px){
+  .contact_share_div:nth-child(2){
+    margin: 30px 0 !important;
+  }
+} */
+  
+
+
+
+ /* socialsites links */
+ .socialsites_links .fa-facebook-f:hover{
+  color: #3b5998;
+ }
+ .socialsites_links .fa-instagram:hover{
+  color: #e4405f;
+ }
+ .socialsites_links .fa-dribbble:hover{
+  color: #ea4c89;
+ }
+ .socialsites_links .fa-pinterest:hover{
+  color: #bd081c;
+ }
+ .socialsites_links .fa-behance:hover{
+  color: #131418;
+ }
+
+ /* @media(max-width:760px){
+  .socialsites_links{
+    margin-bottom: 20px;
+  }
+ } */
+
+ /* foooter */
+ footer{
+ line-height: 50px;
+  width: 100%;
+  background: #ca4203;
+  color: #fff;
+ }
+
+ /* ////Responsive */
+ @media (max-width: 1000px){
+   .img-fluid1 {
+    position: relative;
+    width: 70%;
+    float: right;
+    height: auto;
+    top: 81px;
+  }
+   .main title_h1{
+    font-size: 40px;
+ }
+ .about_text{
+  margin-top: 30px;
+ }
+ .about_text_h1{
+  font-size: 26px;
+  font-weight: bold;
+ }
+ .about_text p{
+  font-size: 17px;
+  line-height: 1.5;
+ }
+ .common_div{
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px !important;
+  margin: auto;
+ }
+
+ .expert_sec h2{
+  text-align: left;
+ }
+ .contact_img img{
+  display: none;
+ }
+
+ .mt-5.contact_resp{
+  margin: 0 !important;
+ }
+
+ .contact_inner{
+  margin: auto;
+ }
+ }
+
+ @media (max-width:770px){
+  .img-fluid1 {
+    position: relative;
+    width: 70%;
+    float: right;
+    height: auto;
+    top: 81px;
+   
+    right: 49px;}
+ }
