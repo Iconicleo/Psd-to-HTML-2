@@ -257,13 +257,10 @@ a{text-decoration: none;}
   display: flex;
 }
 .img-fluid3{
-
-    /* position: relative; */
+  
     width: 55%;
     height: auto;
-    /* left: 112.5%;  */
-     /* bottom: 361px; */
-     float: right;
+    
 }
 
 
